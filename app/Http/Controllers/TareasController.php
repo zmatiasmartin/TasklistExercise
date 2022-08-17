@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use App\Models\Tareas;
 
 class TareasController extends Controller {
 
@@ -40,7 +41,12 @@ class TareasController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request) {
-        //
+         $tarea = new Tareas;
+ 
+        $tarea->id = $request->id;
+         $tarea->titulo = $request->texto;
+ 
+        $tarea->save();
     }
 
     /**

@@ -14,7 +14,7 @@
   </head>
   <body>
     @section('sidebar')
-    <div class=" list-group-item list-group-item-info" >
+    <div class=" list-group-item text-white bg-secondary" >
       <h3> <center>FULLSTACK (Node.js + ReactJS) # 1: Tasklist exercise </center></h3>
     </div>   
 
